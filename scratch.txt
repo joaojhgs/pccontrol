@@ -1,0 +1,5 @@
+curl -X PUT -d "{\"executed\": \"true\"}" https://teste-1135e.firebaseio.com/status.json
+curl -X PUT -d "{\"action\": \"shutdown\"}" https://teste-1135e.firebaseio.com/actions.json
+
+curl -X PUT -d "{\"action\": \"shutdown\", \"executed\": \"true\"}" https://teste-1135e.firebaseio.com/data.json
+
