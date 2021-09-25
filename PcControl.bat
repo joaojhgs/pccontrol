@@ -31,7 +31,7 @@ if %Executed%=="false" (
     if %Action% == "volDown" (
     curl -X PUT -d "{\"action\": \"%Action%\", \"executed\": \"true\"}" https://teste-1135e.firebaseio.com/data.json
     nircmd changesysvolume -5000)
-REM *ESSAS AÇÕES DE MUSICA AINDA NÃO FORAM IMPLEMENTADAS NO APP*
+
 
     if %Action% == "nextMusic" (
     curl -X PUT -d "{\"action\": \"%Action%\", \"executed\": \"true\"}" https://teste-1135e.firebaseio.com/data.json
@@ -45,7 +45,7 @@ REM *ESSAS AÇÕES DE MUSICA AINDA NÃO FORAM IMPLEMENTADAS NO APP*
     curl -X PUT -d "{\"action\": \"%Action%\", \"executed\": \"true\"}" https://teste-1135e.firebaseio.com/data.json
     nircmd sendkey 0xB3 press)
 
-REM *ESSAS AÇÕES DE MUSICA AINDA NÃO FORAM IMPLEMENTADAS NO APP*
+
     if %Action% == "muteUnmute" (
     curl -X PUT -d "{\"action\": \"%Action%\", \"executed\": \"true\"}" https://teste-1135e.firebaseio.com/data.json
     nircmd mutesysvolume 2)
